@@ -10,42 +10,66 @@
         <script type="text/javascript" src="js/app.js"></script>
     </head>
     <body>
-        <form>
+        <form class="form" id="Formulario">
             <div>
-                <label for="Nombre">Nombre</label>
-                <input type="text" id="Nombre">
+                <label class="title" for="Nombre">Nombre: </label>
+                <input type="text" id="Name">
+                <div id="errorName"></div>
             </div>
             <div>
-                <label for="Apellido">Apellido</label>
-                <input type="text" id="Apellido">
+                <label class="title" for="Apellido">Apellido: </label>
+                <input type="text" id="Last">
+                <div id="errorLast"></div>
             </div>
             <div>
-                <label for="Email">Email</label>
+                <label class="title" for="Email">Email: </label>
                 <input type="email" id="Email">
+                <div id="errorEmail"></div>
             </div>
             <div>
-                <label for="Sexo">Sexo:</label>
-                <input type="radio" id="Hombre" value="Hombre">
-                <input type="radio" id="Mujer" value="Mujer">
-                <input type="radio" id="Otro" value="Otros">
+                <label class="title" for="Edad">Edad: </label>
+                <input type="text" id="Year">
+                <div id="errorYear"></div>
             </div>
-            <div>
-                <label>Temas de interés</label>
-                <input type="checkbox" id="Musica" value="Musica">
-                <input type="checkbox" id="Deporte" value="Deportes">
-                <input type="checkbox" id="Juego" value="Juegos">
-                <input type="checkbox" id="Tecnologia" value="Tecnologia">
+            <div class="radiobutton">
+                <label class="title" for="Sex">Sexo: </label>
+                <label><input type="radio" id="Man" value="Hombre">Hombre</label>
+                <label><input type="radio" id="Women" value="Mujer">Mujer</label>
+                <label><input type="radio" id="Others" value="Otros">Otros</label>
+                <div id="errorRadio"></div>
             </div>
-            <div>
-                <label>Pais</label>
-                <input>
+            <div class="checkbox">
+                <label class="title">Temas de interés: </label>
+                <label><input type="checkbox" id="Music" value="Musica"> Musica</label>
+                <label><input type="checkbox" id="Deports" value="Deportes"> Deportes</label>
+                <label><input type="checkbox" id="Games" value="Juegos">Juegos</label>
+                <label><input type="checkbox" id="Tecnology" value="Tecnologia">Tecnologia</label>
+                <div id="errorCheck"></div>
             </div>
-            <div>
-                <label>Comentario</label>
-                <input type="text" id="Comentario">
+            <div class="menu">
+                <label class="title">Pais: </label>
+                <div class="nav">
+                    <li class="country">
+                        <a href="#"> Seleccionar pais</a>
+                        <ul>
+                            <li id="Argentina"><a href="#">Argentina</a></li>
+                            <li id="Brasil"><a href="#">Brasil</a></li>
+                            <li id="Chile"><a href="#">Chile</a></li>
+                            <li id="Paraguy"><a href="#">Paraguy</a></li>
+                        </ul>
+                    </li>
+                    <div id="errorMenu"></div>
+                </div>
+
             </div>
-            <div>
-                <input type="button" id="Enviar" value="Enviar">
+            <div class="textmultiline">
+                <label class="title">Comentario: </label>
+                <textarea id="Commentary" name="comentarios" rows="10" cols="40"> Escribi aquí tus
+                    comentarios</textarea>
+                <div id="errorCommentary"></div>
+            </div>
+            <div class="button">
+                <input type="submit" id="Enviar" value="Enviar">
             </div>
         </form>
     </body>
