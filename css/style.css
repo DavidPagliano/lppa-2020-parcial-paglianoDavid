@@ -226,3 +226,84 @@ textarea {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
 }
+
+/* Validaciones*/
+
+#errorName {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #f80404;
+}
+
+#errorLast {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #f80404;
+}
+
+#errorEmail {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #f80404;
+}
+
+#errorYear {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #f80404;
+}
+
+#errorRadio {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #f80404;
+}
+
+#errorCheck {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #f80404;
+}
+#errorMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #f80404;
+}
+
+#errorCommentary {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #f80404;
+}
