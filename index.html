@@ -11,65 +11,76 @@
     </head>
     <body>
         <form class="form" id="Formulario">
-            <div>
-                <label class="title" for="Nombre">Nombre: </label>
-                <input type="text" id="Name">
-                <div id="errorName"></div>
-            </div>
-            <div>
-                <label class="title" for="Apellido">Apellido: </label>
-                <input type="text" id="Last">
-                <div id="errorLast"></div>
-            </div>
-            <div>
-                <label class="title" for="Email">Email: </label>
-                <input type="email" id="Email">
-                <div id="errorEmail"></div>
-            </div>
-            <div>
-                <label class="title" for="Edad">Edad: </label>
-                <input type="text" id="Year">
-                <div id="errorYear"></div>
-            </div>
-            <div class="radiobutton">
-                <label class="title" for="Sex">Sexo: </label>
-                <label><input type="radio" id="Man" value="Hombre">Hombre</label>
-                <label><input type="radio" id="Women" value="Mujer">Mujer</label>
-                <label><input type="radio" id="Others" value="Otros">Otros</label>
-                <div id="errorRadio"></div>
-            </div>
-            <div class="checkbox">
-                <label class="title">Temas de interés: </label>
-                <label><input type="checkbox" id="Music" value="Musica"> Musica</label>
-                <label><input type="checkbox" id="Deports" value="Deportes"> Deportes</label>
-                <label><input type="checkbox" id="Games" value="Juegos">Juegos</label>
-                <label><input type="checkbox" id="Tecnology" value="Tecnologia">Tecnologia</label>
-                <div id="errorCheck"></div>
-            </div>
-            <div class="menu">
-                <label class="title">Pais: </label>
-                <div class="nav">
-                    <li class="country">
-                        <a href="#"> Seleccionar pais</a>
-                        <ul>
-                            <li id="Argentina"><a href="#">Argentina</a></li>
-                            <li id="Brasil"><a href="#">Brasil</a></li>
-                            <li id="Chile"><a href="#">Chile</a></li>
-                            <li id="Paraguy"><a href="#">Paraguy</a></li>
-                        </ul>
-                    </li>
-                    <div id="errorMenu"></div>
+            <div class="container">
+                <img src="img/logo.jpg" class="logo">
+                <h1>Registro <span>Uai</span></h1>
+                <div class="frameSub1">
+                    <div>
+                        <label class="title1" for="Nombre">Nombre: </label>
+                        <input class="text1" type="text" id="Name">
+                        <div id="errorName"></div>
+                    </div>
+                    <div>
+                        <label class="title1" for="Apellido">Apellido: </label>
+                        <input class="text1" type="text" id="Last">
+                        <div id="errorLast"></div>
+                    </div>
                 </div>
+                <div class="frameSub2">
+                    <div>
+                        <label class="title2" for="Email">Email: </label>
+                        <input class="text2" type="email" id="Email">
+                        <div id="errorEmail"></div>
+                    </div>
+                    <div>
+                        <label class="title2" for="Edad">Edad: </label>
+                        <input class="text2" type="text" id="Year">
+                        <div id="errorYear"></div>
+                    </div>
+                </div>
+                <div class="frameSub3">
+                    <div class="radiobutton">
+                        <label class="title" for="Sex">Sexo: </label>
+                        <label><input type="radio" id="Man" value="Hombre">Hombre</label>
+                        <label><input type="radio" id="Women" value="Mujer">Mujer</label>
+                        <label><input type="radio" id="Others" value="Otros">Otros</label>
+                        <div id="errorRadio"></div>
+                    </div>
+                    <div class="checkbox">
+                        <label class="title">Temas de interés: </label>
+                        <label><input type="checkbox" id="Music" value="Musica"> Musica</label>
+                        <label><input type="checkbox" id="Deports" value="Deportes"> Deportes</label>
+                        <label><input type="checkbox" id="Games" value="Juegos">Juegos</label>
+                        <label><input type="checkbox" id="Tecnology" value="Tecnologia">Tecnologia</label>
+                        <div id="errorCheck"></div>
+                    </div>
+                </div>
+                <div class="frameSub4">
+                    <div class="menu">
+                        <label class="title">Pais: </label>
+                        <div class="nav">
+                            <li class="country">
+                                <a href="#"> Seleccionar pais</a>
+                                <ul>
+                                    <li id="Argentina"><a href="#">Argentina</a></li>
+                                    <li id="Brasil"><a href="#">Brasil</a></li>
+                                    <li id="Chile"><a href="#">Chile</a></li>
+                                    <li id="Paraguay"><a href="#">Paraguay</a></li>
+                                </ul>
+                            </li>
+                            <div id="errorMenu"></div>
+                        </div>
 
-            </div>
-            <div class="textmultiline">
-                <label class="title">Comentario: </label>
-                <textarea id="Commentary" name="comentarios" rows="10" cols="40"> Escribi aquí tus
-                    comentarios</textarea>
-                <div id="errorCommentary"></div>
-            </div>
-            <div class="button">
-                <input type="submit" id="Enviar" value="Enviar">
+                    </div>
+                    <div class="textmultiline">
+                        <label class="title">Comentario: </label>
+                        <textarea id="Commentary" name="comentarios"></textarea>
+                        <div id="errorCommentary"></div>
+                    </div>
+                    <div>
+                        <input class="button" type="submit" onclick=" return enviarDatos()" id="Enviar">
+                    </div>
+                </div>
             </div>
         </form>
     </body>
